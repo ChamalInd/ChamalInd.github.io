@@ -195,4 +195,8 @@ main #skills {
     .stack {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .stack .stack-item {
+        width: calc(100% - 20px);
+    }
 }
