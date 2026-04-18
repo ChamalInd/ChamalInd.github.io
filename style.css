@@ -1,0 +1,93 @@
+/* Default Styling  */
+* { 
+    font-family: 'inter', 'helvetica';
+    font-size: 18px;
+    transition: 0.3s all ease;
+}
+
+i {
+    font-size: 22px;
+} 
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bolder;
+    width: 100%;
+    text-align: left;
+}
+
+/* Styling navbar */
+.app-title {
+    font-weight: bolder;
+}
+
+.nav-link, #icon {
+    font-weight: bold;
+}
+
+.nav-link:hover, #icon:hover {
+    font-weight: bolder;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus, .navbar-toggler:active {
+    box-shadow: none;
+}
+
+/* Styling of main section  */
+main .sub-div {
+    scroll-margin-top: 70px;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Styling of about section  */
+main #about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, auto);
+}
+
+main #about .left, main #about .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main #about .left {
+    height: calc(100% - 100px);
+    gap: 5px;
+    flex-direction: column;
+}
+
+main #about .left h1, main #about .left h3, main #about .left p {
+    padding-left: 80px;
+    margin-bottom: 10px;
+}
+
+main #about .left h1 {
+    font-size: 60px;
+}
+
+main #about .left h3 {
+    font-size: 30px;
+}
+
+/* Media queries  */
+@media screen and (max-width: 990px) {
+    main .sub-div {
+        margin-top: 70px;
+    }
+
+    main #about {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, auto);
+    }
+
+    main #about .left h1, main #about .left h3, main #about .left p {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}

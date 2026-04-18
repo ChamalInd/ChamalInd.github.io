@@ -1,0 +1,22 @@
+/* Default Styling  */
+body {
+    background-color: #202020;
+    color: white;
+}
+
+/* Styling nav bar  */
+.navbar {
+    background-color: #353535 !important;
+}
+
+.app-title {
+    color: white;
+}
+
+.nav-link, #icon, .navbar-toggler i {
+    color: #a4a4a4;
+}
+
+.nav-link:hover, #icon:hover, .navbar-toggler i:hover {
+    color: white;
+}

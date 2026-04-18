@@ -1,52 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Include Bootstap5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
     <!-- Include Local Stylings -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="light.css" id="theme-link">
     <!-- Include Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Include fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <title>ChamalInd</title>
 </head>
+
 <body>
     <!-- Creating nav bar -->
     <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand app-title mt-2" href="index.html">
+            <a class="navbar-brand app-title" href="index.html">
                 ChamalInd
             </a>
-            <button aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbar" data-bs-toggle="collapse" type="button">
-                <span class="navbar-toggler-icon"></span>
+            <button aria-controls="navbar" class="navbar-toggler" data-bs-target="#navbar" data-bs-toggle="collapse" type="button">
+                <i class="fa-solid fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbar">
-                <ul class="navbar-nav mt-2">
-                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Connect</a></li>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#connect">Connect</a></li>
                 </ul>
 
-                <ul class="navbar-nav ms-auto mt-2">
-                    <li class="nav-item"><a class="nav-link" href="#">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">
-                        <i class="fa-brands fa-square-github"></i>
-                    </a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">
-                        <i class="fa-solid fa-sun"></i>
-                        <!-- <i class="fa-solid fa-moon"></i> -->
-                    </a></li>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link">
+                            <button class="btn" type="button" onclick="changeTheme()">
+                                <i class="fa-solid fa-sun" id="icon"></i>
+                                <!-- <i class="fa-solid fa-moon"></i> -->
+                            </button>
+                        </a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
+    <main>
+        <!-- Main content -->
+        <div id="about" class="sub-div">
+            <div class="left">
+                <h3>Hi! I am Chamal Induwara</h3>
+                <h1>CS Undergrad</h1>
+                <p>
+                    Computer Science undergraduate with a strong interest in software development and emerging technologies.
+                    I enjoy solving problems through logical thinking and building practical solutions through code.
+                    <br><br>
+                    Passionate about continuous learning, innovation, and applying technology to create meaningful impact.
+                    Currently developing my technical skills while seeking opportunities to grow through real-world
+                    experience and collaboration.
+                </p>
+            </div>
+            <div class="right">
+                <img src="https://placehold.co/400?text=Chamal+Induwara&font=poppins" alt="">
+            </div>
+        </div>
+        <div id="skills" class="sub-div">
+            
+        </div>
+        <div id="projects" class="sub-div">
+
+        </div>
+        <div id="connect" class="sub-div">
+
+        </div>
+    </main>
+
+    <footer>
+        <!-- Creating a footer  -->
+        <div>
+            ChamalInduwara @ 2026
+        </div>
+    </footer>
+
     <!-- Include Local JS Scripts -->
     <script src="script.js"></script>
 </body>
+
 </html>
