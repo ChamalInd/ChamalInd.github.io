@@ -2,7 +2,7 @@
 * { 
     font-family: 'inter', 'helvetica';
     font-size: 18px;
-    transition: 0.3s all ease;
+    transition: all 0.3s ease;
 }
 
 i {
@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Styling of main section  */
 main .sub-div {
-    scroll-margin-top: 70px;
+    scroll-margin-top: 80px;
     width: 100%;
     height: 100vh;
 }
@@ -75,10 +75,58 @@ main #about .left h3 {
     font-size: 30px;
 }
 
+/* Styling skills */
+main #skills {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, auto);
+}
+
+main #skills .row-top h2 {
+    width: 100%;
+    font-size: 45px;
+    text-align: center;
+}
+
+main #skills .stack {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(auto, auto);
+    place-items: center;
+}
+
+main #skills .stack .stack-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: calc(70% - 10px);
+    padding: 20px;
+    margin: 10px;
+}
+
+main #skills .stack .stack-item:hover {
+    cursor: pointer;
+    transform: translateY(-5px); 
+}
+
+main #skills .stack .stack-item img {
+    width: 40px;
+    height: auto;
+    font-weight: bolder;
+}
+
+main #skills .stack .stack-item h5 {
+    margin-top: 10px;
+    text-align: center;
+}
+
 /* Media queries  */
 @media screen and (max-width: 990px) {
     main .sub-div {
-        margin-top: 70px;
+        margin-top: 80px;
+        height: auto;
     }
 
     main #about {
@@ -89,5 +137,9 @@ main #about .left h3 {
     main #about .left h1, main #about .left h3, main #about .left p {
         padding-left: 50px;
         padding-right: 50px;
+    }
+
+    main #skills .stack {
+        grid-template-columns: repeat(2, 1fr);
     }
 }

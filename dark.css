@@ -20,3 +20,10 @@ body {
 .nav-link:hover, #icon:hover, .navbar-toggler i:hover {
     color: white;
 }
+
+/* Styling stack items */
+.stack-item {
+    background-color: #353535;
+    box-shadow: 0 0 10px 5px rgba(180, 180, 180, 0.2); 
+    border: 1px solid rgba(180, 180, 180, 0.2);
+}
