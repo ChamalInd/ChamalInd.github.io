@@ -194,6 +194,7 @@ main #skills, main #projects {
 
 .stack .stack-item ul {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     margin: 5px;
     padding: 0;
@@ -279,7 +280,7 @@ main #connect ul li a i {
     }
 
     main #about .right .terminal {
-        margin: 0;
+        margin: 10px;
         width: 80%;
         height: 300px;
     }
@@ -298,6 +299,23 @@ main #connect ul li a i {
     }
 
     .stack .stack-item {
-        width: calc(100% - 20px);
+        width: calc(100% - 10px);
+        padding: 5px;
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .stack .stack-item {
+        max-width: 100%;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    main #about .right .terminal {
+        width: 300px;
+        padding: 0;
+        margin: 0;
+        height: 300px;
     }
 }
