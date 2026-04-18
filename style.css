@@ -285,6 +285,10 @@ main #connect ul li a i {
         height: 300px;
     }
 
+    main #about .right .terminal .text-appear {
+        margin-top: 10px;
+    }
+
     main #connect {
         grid-template-columns: repeat(1, auto);
     }
@@ -299,9 +303,9 @@ main #connect ul li a i {
     }
 
     .stack .stack-item {
-        width: calc(100% - 10px);
-        padding: 5px;
-        margin: 5px;
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin: 10px;
     }
 }
 
