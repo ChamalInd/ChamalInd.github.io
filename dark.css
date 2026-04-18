@@ -21,9 +21,27 @@ body {
     color: white;
 }
 
+/* Styling footer  */
+footer, footer div, footer div p {
+    background-color: #353535;
+}
+
 /* Styling stack items */
-.stack-item {
+.stack .stack-item {
     background-color: #353535;
     box-shadow: 0 0 10px 5px rgba(180, 180, 180, 0.2); 
     border: 1px solid rgba(180, 180, 180, 0.2);
+}
+
+
+.stack .stack-item a, .stack .stack-item a:visited {
+    color: #54a5ec;
+    border: 1px solid #54a5ec;
+    background-color: #353535;
+}
+
+.stack .stack-item a:hover {
+    color: #353535;
+    border: 1px solid #353535;
+    background-color: #54a5ec;
 }

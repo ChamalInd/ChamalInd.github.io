@@ -36,6 +36,19 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: none;
 }
 
+/* Styling footer  */
+footer, footer div {
+    width: 100%;
+}
+
+footer div p {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bolder;
+    margin: 0;
+    padding: 5px;
+}
+
 /* Styling of main section  */
 main .sub-div {
     scroll-margin-top: 80px;
@@ -75,51 +88,91 @@ main #about .left h3 {
     font-size: 30px;
 }
 
-/* Styling skills */
-main #skills {
+/* Styling skills & projects */
+main #skills, main #projects {
+    height: auto;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4, auto);
+    grid-template-rows: repeat(auto, auto);
 }
 
-main #skills .row-top h2 {
+main #skills {
+    margin-bottom: 50px;
+}
+
+/* Styling skill and project cards */
+.row-top h2 {
     width: 100%;
     font-size: 45px;
     text-align: center;
 }
 
-main #skills .stack {
+.stack {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(auto, auto);
     place-items: center;
 }
 
-main #skills .stack .stack-item {
+.stack .stack-item {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
     width: calc(70% - 10px);
+    height: calc(100% - 30px);
     padding: 20px;
     margin: 10px;
 }
 
-main #skills .stack .stack-item:hover {
+.stack .stack-item:hover {
     cursor: pointer;
     transform: translateY(-5px); 
 }
 
-main #skills .stack .stack-item img {
+.stack .stack-item img {
     width: 40px;
     height: auto;
     font-weight: bolder;
 }
 
-main #skills .stack .stack-item h5 {
+.stack .stack-item h5 {
     margin-top: 10px;
     text-align: center;
+}
+
+.stack .stack-item p {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.stack .stack-item ul {
+    display: flex;
+    list-style: none;
+    margin: 5px;
+    padding: 0;
+}
+
+.stack .stack-item ul li {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.stack .stack-item ul li img {
+    filter: grayscale(100%);
+    width: 30px;
+    height: auto;
+}
+
+.stack .stack-item a {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    width: 80%;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 10px;
 }
 
 /* Media queries  */
@@ -139,7 +192,7 @@ main #skills .stack .stack-item h5 {
         padding-right: 50px;
     }
 
-    main #skills .stack {
+    .stack {
         grid-template-columns: repeat(2, 1fr);
     }
 }
