@@ -52,12 +52,13 @@ main #about .right .terminal {
 }
 
 /* Styling connect */
-.row-bottom ul li a {
+main #connect ul li a {
     color: #202020;
-    border: 1px solid #eeeeee;
+    border: 1px solid white;
     background-color: #eeeeee;
 }
 
-.row-bottom ul li a:hover {
+main #connect ul li a:hover {
     background-color: white;
+    border: 1px solid #eeeeee;
 }

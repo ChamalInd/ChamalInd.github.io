@@ -136,8 +136,8 @@ main #about .right .terminal .text-appear {
     margin-left: 20px;
 }
 
-/* Styling skills & projects & connect */
-main #skills, main #projects, main #connect {
+/* Styling skills & projects */
+main #skills, main #projects {
     height: auto;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -220,6 +220,46 @@ main #skills, main #projects, main #connect {
     border-radius: 10px;
 }
 
+/* Styling Connect  */
+main #connect {
+    height: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, auto);
+}
+
+main #connect .left, main #connect .right {
+    margin: 50px;
+}
+
+main #connect h2 {
+    text-align: center;
+}
+
+main #connect ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+main #connect ul li a {
+    display: inline-block;
+    text-align: center;
+    border-radius: 10px;
+    line-height: 40px;
+    width: 80%;
+    margin: 5px;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-decoration: none;
+}
+
+main #connect ul li a i {
+    margin-left: 10px;
+}
+
 
 /* Media queries  */
 @media screen and (max-width: 990px) {
@@ -242,6 +282,15 @@ main #skills, main #projects, main #connect {
         margin: 0;
         width: 80%;
         height: 300px;
+    }
+
+    main #connect {
+        grid-template-columns: repeat(1, auto);
+    }
+
+    main #connect ul li a {
+        width: 100%;
+        margin: 5px;
     }
 
     .stack {
