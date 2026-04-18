@@ -9,7 +9,7 @@ body {
     background-color: #353535 !important;
 }
 
-.app-title {
+.app-title, .app-title:hover {
     color: white;
 }
 
@@ -26,8 +26,13 @@ footer, footer div, footer div p {
     background-color: #353535;
 }
 
+/* Styling terminal  */
+main #about .right .terminal {
+    background-color: #353535;
+}
+
 /* Styling stack items */
-.stack .stack-item, main #connect {
+.stack .stack-item {
     background-color: #353535;
     box-shadow: 0 0 10px 5px rgba(180, 180, 180, 0.2); 
     border: 1px solid rgba(180, 180, 180, 0.2);

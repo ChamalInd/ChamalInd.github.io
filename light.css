@@ -9,7 +9,7 @@ body {
     background-color: white !important;
 }
 
-.app-title {
+.app-title, .app-title:hover {
     color: #202020;
 }
 
@@ -27,8 +27,13 @@ footer, footer div, footer div p {
     background-color: white;
 }
 
+/* Styling terminal  */
+main #about .right .terminal {
+    background-color: white;
+}
+
 /* Styling stack items */
-.stack .stack-item, main #connect {
+.stack .stack-item {
     background-color: white;
     box-shadow: 0 0 20px 5px rgba(67, 67, 67, 0.2); 
     border: 1px solid rgba(67, 67, 67, 0.2);
