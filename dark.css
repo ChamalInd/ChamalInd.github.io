@@ -27,7 +27,7 @@ footer, footer div, footer div p {
 }
 
 /* Styling stack items */
-.stack .stack-item {
+.stack .stack-item, main #connect {
     background-color: #353535;
     box-shadow: 0 0 10px 5px rgba(180, 180, 180, 0.2); 
     border: 1px solid rgba(180, 180, 180, 0.2);
@@ -44,4 +44,15 @@ footer, footer div, footer div p {
     color: #353535;
     border: 1px solid #353535;
     background-color: #54a5ec;
+}
+
+/* Styling connect */
+.row-bottom ul li a {
+    color: white;
+    border: 1px solid #202020;
+    background-color: #202020;
+}
+
+.row-bottom ul li a:hover {
+    background-color: #353535;
 }
