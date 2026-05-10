@@ -1,2 +1,3 @@
-# ChamalInd.github.io
+# ChamalInd
+
 My Portfolio Page
